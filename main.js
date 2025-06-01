@@ -6,7 +6,7 @@ const tankPercentageElem = document.getElementById('tankPercentage');
 const tankFluid = document.querySelector('#tank-fluid');
 
 // Connect to Lightstreamer (address only, no protocol)
-const lsClient = new LightstreamerClient("http://push.lightstreamer.com", adapterSet);
+const lsClient = new LightstreamerClient("https://push.lightstreamer.com", adapterSet);
 lsClient.connectionDetails.setAdapterSet(adapterSet);
 
 lsClient.connect();
