@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS Urine Tank Fill Level 🚽</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="space-background"></div>
+<header>
+    <img src="assets/iss-silhouette.svg" alt="ISS Silhouette" id="iss-logo">
+    <h1>International Space Station</h1>
+</header>
+<div class="container">
+    <div class="tank-container">
+        <div class="tank-outer">
+            <div class="tank-percentage" id="tankPercentage">--%</div>
+            <div id="tank-fluid"></div>
+        </div>
+    </div>
+    <div class="label">
+        <span>Urine Tank</span>
+        <span class="info-tooltip" tabindex="0">&#9432;
+                <span class="tooltip-text">
+                    The urine tank is part of the ISS Environmental Control System. Monitoring its fill level ensures proper recycling and waste management aboard the station.
+                </span>
+            </span>
+    </div>
+</div>
+<footer>
+    <span>Made by <a href="https://github.io/janwennrich" target="_blank">Jan W.</a></span>
+    <span>Inspired by <a href="https://github.com/Jaennaet/pISSStream" target="_blank" rel="nofollow">pISSStream</a></span>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lightstreamer-client-web/lightstreamer.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
